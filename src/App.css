@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.kanban-columns {
+  display: flex;
+  justify-content: space-around; /* Changed to space-around for equal spacing */
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px; /* Added padding for better layout */
+}
+
+.ticket-group {
+  flex: 1;
+  margin: 0 15px; /* Increased margin for more separation */
+  background-color: #e9f5ff; /* Changed background color for ticket groups */
+  border-radius: 8px; /* Added border radius for ticket groups */
+  padding: 10px; /* Added padding for ticket groups */
+}
+
+.ticket {
+  background-color: #fff; /* Changed ticket background color */
+  border: 2px solid #007bff; /* Changed border color */
+  border-radius: 8px; /* Increased border radius */
+  padding: 15px; /* Increased padding */
+  margin-bottom: 15px; /* Increased bottom margin */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: transform 0.2s; /* Added transition effect */
+}
+
+.ticket:hover {
+  transform: scale(1.02); /* Added hover effect */
+}
+
+.ticket h4 {
+  margin: 0 0 10px; /* Increased margin for h4 */
+  color: #007bff; /* Changed color for better visibility */
+}
+
+@media (max-width: 768px) {
+  .kanban-columns {
+    flex-direction: column;
+  }
+
+  .ticket-group {
+    margin-bottom: 30px; /* Increased margin for mobile view */
+  }
+}
